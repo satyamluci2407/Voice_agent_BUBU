@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUBU &hearts;</title>
-    <link rel="shortcut icon" href="assets/img/sophia.ico">
+    <link rel="shortcut icon" href="assets/img/bubu.ico">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -55,11 +55,14 @@
         <section id="SiriWave" class="mb-4" hidden>
             <div class="container">
                 <div class="row">
+                    <div class="col-12" style="position: absolute; top: 16px; left: 16px;">
+                        <button id="BackBtn" class="glow-on-hover" onclick="document.getElementById('SiriWave').hidden=true; document.getElementById('Oval').hidden=false;"><i class="bi bi-arrow-left"></i></button>
+                    </div>
                     <div class="col-md-12">
                         <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
                             <div>
                                 <h5 class="text-start text-light mb-4 siri-message" style="font-size: 26px;">
-                                    Hello, I am S.O.P.H.I.A</h5>
+                                    Hello, I am B.U.B.U &hearts;</h5>
                                 <div id="siri-container"></div>
                             </div>
                         </div>
