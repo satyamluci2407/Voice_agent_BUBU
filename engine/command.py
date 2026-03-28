@@ -36,7 +36,7 @@ def takeCommand():
     try:
         print('Recognizing...')
         eel.DisplayMessage('Recognizing...')
-        query = r.recognize_google(audio, language='hi-IN')
+        query = r.recognize_google(audio, language='en')
         print(f'User said: {query}')
         #speak(query)
         time.sleep(2)
@@ -67,7 +67,7 @@ def allCommands():
         speak("Main badhiya hu Satyam ji. Aap kaise ho?")
     elif 'kya kar rahi ho' in query:
         speak(f" Aapne kaha : {query}")
-        speak("Main aapke liye kaam kar rhi hu. Aap mujhe koi bhi command de sakte ho, jaise ki open youtube, open facebook, play music, etc.")
+        speak("Main aapke liye kaam kar rhi hu. Aap mujhe koi bhi command de sakte ho, jaise ki ghodi ban jao, ulta leto, meraa chuso etc.")
     else:
         speak(f" Aapne kaha : {query}")
         
