@@ -15,15 +15,20 @@ cursor = conn.cursor()
 # conn.close()  # Don't forget to close the connection when done
 
 
-query = "CREATE TABLE IF NOT EXISTS web_command(id integer primary key, name VARCHAR(100), url VARCHAR(1000))"
-cursor.execute(query)
+# query = "CREATE TABLE IF NOT EXISTS web_command(id integer primary key, name VARCHAR(100), url VARCHAR(1000))"
+# cursor.execute(query)
 
 # to insert values
-query = "INSERT INTO web_command VALUES (null,'Canva', 'https://www.canva.com')"
+# query = "INSERT INTO web_command VALUES (null,'Canva', 'https://www.canva.com')"
+# cursor.execute(query)
+# conn.commit()
+# conn.close()  # Don't forget to close the connection when done
+
+#Delete
+query = "DELETE FROM web_command WHERE name='Hery'"
 cursor.execute(query)
 conn.commit()
-conn.close()  # Don't forget to close the connection when done
-
+conn.close()
 
 #testing module
 # query = "OneNote"
